@@ -24,6 +24,39 @@
     <link rel="stylesheet" href="Stylesheets/font.css">
     <script type="text/javascript"
         src="//use.typekit.net/ik/9o3yIfSxrTalU5lPlMTGJimBZ67aLMAY0EtkbDl7x-Mfezj2fFHN4UJLFRbh52jhWDm8jRJtFhZyZ29oZQZywQjuZ2gcwDjoZy7gMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0-h8XiAqlZemldkuqZPoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZPoRdhXCHKoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelTiYmTOAs8dAvlZe90SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUDSWmyScmDSeBRZPoRdhXCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-h8XiAqlZemldkuqZPoDSWmyScmDSeBRZPoRdhXCiaiaO1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXK2ABnie8hOAikdas8ShC7fbRbdsMMeMb6MKG4fFZlIMMjgPMfH6qJXcXbMg6YJMJ7fbRsdsMMeMt6MKG4fFFlIMMjIPMfqMeZqwnugb.js"></script>
+    
+        <script type="text/javascript">
+            function setCookie(c_name,value,expiredays)
+            {
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate()+expiredays);
+            document.cookie=c_name+ "=" +escape(value)+
+            ((expiredays==null) ? "" : ";expires="+exdate.toUTCString()+";path=/;");
+            }
+        
+            function getCookie(c_name)
+            {
+            if (document.cookie.length>0)
+              {
+              c_start=document.cookie.indexOf(c_name + "=");
+              if (c_start!=-1)
+                {
+                c_start=c_start + c_name.length+1;
+                c_end=document.cookie.indexOf(";",c_start);
+                if (c_end==-1) c_end=document.cookie.length;
+                return true; //unescape(document.cookie.substring(c_start,c_end));
+                }
+              }
+            return false;
+            }
+        
+            $cr(document).ready(function(){
+                if(!getCookie("cr_form334962")){
+                    //setCookie("cr_form334962", "true", 30);
+                    $cr("#formbug").html("<img src='/stats/form_bug.php?id=334962'>");
+                }
+            });
+            </script>
     <script type="text/javascript">
         try {
             Typekit.load();
@@ -1442,7 +1475,13 @@
                                             <div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-660f26eb39533ef5f115">
                                                 <div class="sqs-block-content">
                                                     <div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button" data-alignment="center" data-button-size="small" data-button-type="tertiary">
-                                                        <a href="" class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element">NOTIFY
+                                                        <form class="layout_form cr_form cr_font" action="https://seu2.cleverreach.com/f/329312-334962/wcs/" method="post" target="_blank">
+                                                        <input class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element" type="email" id="text7506212" name="email" value="" placeholder="name@example.com"  style="width:75%; height: 2px;">
+                                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                                        <br/>
+                                                        <div id="recaptcha_v2_widget" class="g-recaptcha" data-theme="dark" data-size="normal" data-sitekey="6Lfhcd0SAAAAAOBEHmAVEHJeRnrH8T7wPvvNzEPD"></div>
+                                                        <div id="7506214" rel="button" class="cr_form-component cr_form-component--submit cr_ipe_item ui-sortable  submit_container">
+                                                            <button type="submit" class="sqs-block-button-element--small sqs-button-element--tertiary sqs-block-button-element" style="width: 100%;">NOTIFY</button>
 </a>
                                                     </div>
                                                 </div>
